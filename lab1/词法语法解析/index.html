@@ -1128,28 +1128,20 @@
 <p>现在我们开始编写 Cminusf 的词法解析器。首先，让我们了解一下 Cminusf 的词法规则，随后将介绍实验要求和细节。</p>
 <h3 id="cminusf-词法">Cminusf 词法<a class="headerlink" href="#cminusf-词法" title="Permanent link">¶</a></h3>
 <p>Cminus 是 C 语言的一个子集，该语言的语法在《编译原理与实践》第九章附录中有详细的介绍。而 Cminusf 则是在 Cminus 上追加了浮点操作。</p>
-<ol>
-<li>关键字。</li>
-</ol>
+<p>1.关键字。</p>
 <div class="highlight"><pre><span></span><code><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="kt">float</span>
 </code></pre></div>
-<ol>
-<li>专用符号。</li>
-</ol>
+<p>2.专用符号。</p>
 <div class="highlight"><pre><span></span><code><span class="o">+</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="cm">/* */</span>
 </code></pre></div>
-<ol>
-<li>标识符 ID 和数值，通过下列正则表达式定义：</li>
-</ol>
+<p>3.标识符 ID 和数值，通过下列正则表达式定义：</p>
 <div class="highlight"><pre><span></span><code><span class="n">letter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="o">|</span><span class="p">...</span><span class="o">|</span><span class="n">z</span><span class="o">|</span><span class="n">A</span><span class="o">|</span><span class="p">...</span><span class="o">|</span><span class="n">Z</span>
 <span class="n">digit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="o">|</span><span class="p">...</span><span class="o">|</span><span class="mi">9</span>
 <span class="n">ID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">letter</span><span class="o">+</span>
 <span class="n">INTEGER</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">digit</span><span class="o">+</span>
 <span class="n">FLOAT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">digit</span><span class="o">+</span><span class="p">.</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">digit</span><span class="o">*</span><span class="p">.</span><span class="n">digit</span><span class="o">+</span><span class="p">)</span>
 </code></pre></div>
-<ol>
-<li>注释用 <code>/*...*/</code> 表示，可以超过一行。注释不能嵌套。</li>
-</ol>
+<p>4.注释用 <code>/*...*/</code> 表示，可以超过一行。注释不能嵌套。</p>
 <div class="highlight"><pre><span></span><code><span class="cm">/*...*/</span>
 </code></pre></div>
 <p>请认真阅读 Cminusf 的词法。其词法特性相比 C 语言做了大量简化，比如标识符 <code>student_id</code> 在 C 语言中是合法的，但是在 Cminusf 中是不合法的。</p>
@@ -1556,7 +1548,7 @@ Reduce<span class="w"> </span>derivation
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年9月24日 04:44:40 UTC">2025年9月24日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年9月26日 13:38:18 UTC">2025年9月26日</span>
   </span>
 
     
