@@ -6,6 +6,10 @@
       
       
       
+        <link rel="prev" href="../cminusf%E8%AF%AD%E4%B9%89/">
+      
+      
+        <link rel="next" href="../LightIR%20C%2B%2B/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -13,7 +17,7 @@
     
     
       
-        <title>Light IR - USTC 编译原理和技术 2025</title>
+        <title>Light IR 简介 - USTC 编译原理和技术 2025</title>
       
     
     
@@ -119,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Light IR
+              Light IR 简介
             
           </span>
         </div>
@@ -277,6 +281,28 @@
   
   
   Lab1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Lab2
 
         </a>
       </li>
@@ -766,6 +792,589 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Lab2
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Lab2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab2 简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../warmup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Light IR 预热
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cminusf%E8%AF%AD%E4%B9%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cminusf 语义介绍
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Light IR 简介
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Light IR 简介
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#light-ir-简介" class="md-nav__link">
+    <span class="md-ellipsis">
+      Light IR 简介
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#light-ir-指令" class="md-nav__link">
+    <span class="md-ellipsis">
+      Light IR 指令
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Light IR 指令">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#light-ir-指令假设" class="md-nav__link">
+    <span class="md-ellipsis">
+      Light IR 指令假设
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#light-ir-指令详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      Light IR 指令详解
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Light IR 指令详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#terminator-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Terminator Instructions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Terminator Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ret" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ret
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#br" class="md-nav__link">
+    <span class="md-ellipsis">
+      Br
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standard-binary-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standard Binary Instructions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Standard Binary Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-fadd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add FAdd
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub-fsub" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sub FSub
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mul-fmul" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mul FMul
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sdiv-fdiv" class="md-nav__link">
+    <span class="md-ellipsis">
+      SDiv FDiv
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#memory-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Instructions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Memory Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alloca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alloca
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load" class="md-nav__link">
+    <span class="md-ellipsis">
+      Load
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#store" class="md-nav__link">
+    <span class="md-ellipsis">
+      Store
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#castinst" class="md-nav__link">
+    <span class="md-ellipsis">
+      CastInst
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CastInst">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zext" class="md-nav__link">
+    <span class="md-ellipsis">
+      ZExt
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fptosi" class="md-nav__link">
+    <span class="md-ellipsis">
+      FpToSi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sitofp" class="md-nav__link">
+    <span class="md-ellipsis">
+      SiToFp
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Instructions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#icmp-fcmp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ICmp FCmp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getelementptr" class="md-nav__link">
+    <span class="md-ellipsis">
+      GetElementPtr
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#从-cminusf-生成-light-ir" class="md-nav__link">
+    <span class="md-ellipsis">
+      从 Cminusf 生成 Light IR
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="从 Cminusf 生成 Light IR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#变量" class="md-nav__link">
+    <span class="md-ellipsis">
+      变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#全局变量" class="md-nav__link">
+    <span class="md-ellipsis">
+      全局变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#表达式中间结果" class="md-nav__link">
+    <span class="md-ellipsis">
+      表达式中间结果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#函数参数类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      函数参数类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#函数参数传递" class="md-nav__link">
+    <span class="md-ellipsis">
+      函数参数传递
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#函数参数存储" class="md-nav__link">
+    <span class="md-ellipsis">
+      函数参数存储
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LightIR%20C%2B%2B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Light IR C++ 库
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visitor_pattern/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    访问者模式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../autogen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IR 自动化生成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1045,6 +1654,75 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#从-cminusf-生成-light-ir" class="md-nav__link">
+    <span class="md-ellipsis">
+      从 Cminusf 生成 Light IR
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="从 Cminusf 生成 Light IR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#变量" class="md-nav__link">
+    <span class="md-ellipsis">
+      变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#全局变量" class="md-nav__link">
+    <span class="md-ellipsis">
+      全局变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#表达式中间结果" class="md-nav__link">
+    <span class="md-ellipsis">
+      表达式中间结果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#函数参数类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      函数参数类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#函数参数传递" class="md-nav__link">
+    <span class="md-ellipsis">
+      函数参数传递
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#函数参数存储" class="md-nav__link">
+    <span class="md-ellipsis">
+      函数参数存储
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1069,7 +1747,7 @@
 <h1 id="light-ir">Light IR<a class="headerlink" href="#light-ir" title="Permanent link">¶</a></h1>
 <h2 id="light-ir-简介">Light IR 简介<a class="headerlink" href="#light-ir-简介" title="Permanent link">¶</a></h2>
 <p>本课程以 Cminusf 语言为源语言，从 LLVM IR 中裁剪出了适用于教学的精简的 IR 子集，并将其命名为 Light IR。同时依据 LLVM 的设计，为 Light IR 提供了配套简化的 <a href="../LightIR%20C%2B%2B/">C++ 库</a>，用于生成 IR。</p>
-<p>如下是一段 C 语言代码 <code>easy.c</code> 与 其对应的 IR 文件 <code>easy.ll</code> 示例。</p>
+<p>如下是一段 C 语言代码 <code>easy.c</code> 与其对应的 LLVM IR 文件 <code>easy.ll</code> 和 Light IR <code>easy_light.ll</code> 示例。</p>
 <ul>
 <li><code>easy.c</code>:</li>
 </ul>
@@ -1104,6 +1782,29 @@
 <span class="p">}</span>
 <span class="p">;</span><span class="w"> </span><span class="p">...</span>
 </code></pre></div>
+<ul>
+<li><code>easy_light.ll</code>:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="p">;</span><span class="w"> </span><span class="n">ModuleID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">'</span><span class="n">easy</span><span class="p">.</span><span class="n">c</span><span class="err">'</span>
+<span class="p">;</span><span class="w"> </span><span class="p">...</span>
+<span class="p">;</span><span class="w"> </span><span class="n">无</span><span class="w"> </span><span class="n">dso_local</span><span class="w"> </span><span class="n">函数说明符和</span><span class="w"> </span><span class="err">#</span><span class="mi">0</span><span class="w"> </span><span class="n">属性组</span>
+<span class="n">define</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="err">@</span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="p">;</span><span class="w"> </span><span class="n">此处</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="n">function</span><span class="w"> </span><span class="n">仅有</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">个</span><span class="w"> </span><span class="n">basicblock</span><span class="p">,</span><span class="w"> </span><span class="n">可以选择标出</span><span class="w"> </span><span class="n">basicblock</span><span class="w"> </span><span class="n">或者像</span><span class="w"> </span><span class="n">easy</span><span class="p">.</span><span class="n">ll</span><span class="w"> </span><span class="n">忽略</span>
+<span class="w">  </span><span class="p">;</span><span class="w"> </span><span class="n">operand</span><span class="w"> </span><span class="n">和</span><span class="w"> </span><span class="n">label</span><span class="w"> </span><span class="n">命名方法与</span><span class="w"> </span><span class="n">clang</span><span class="w"> </span><span class="n">生成的</span><span class="w"> </span><span class="n">llvm</span><span class="w"> </span><span class="n">ir</span><span class="w"> </span><span class="n">不同</span><span class="p">,</span><span class="w"> </span><span class="n">但二者都可以工作</span>
+<span class="nl">label_entry</span><span class="p">:</span>
+<span class="w">  </span><span class="p">;</span><span class="w"> </span><span class="n">无</span><span class="w"> </span><span class="n">align</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="n">对齐</span>
+<span class="w">  </span><span class="o">%</span><span class="n">op0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">alloca</span><span class="w"> </span><span class="n">i32</span>
+<span class="w">  </span><span class="o">%</span><span class="n">op1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">alloca</span><span class="w"> </span><span class="n">i32</span>
+<span class="w">  </span><span class="n">store</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">op0</span>
+<span class="w">  </span><span class="n">store</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">op1</span>
+<span class="w">  </span><span class="o">%</span><span class="n">op2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">load</span><span class="w"> </span><span class="n">i32</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">op0</span>
+<span class="w">  </span><span class="o">%</span><span class="n">op3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">load</span><span class="w"> </span><span class="n">i32</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">op1</span>
+<span class="w">  </span><span class="p">;</span><span class="w"> </span><span class="n">无</span><span class="w"> </span><span class="n">nsw</span><span class="w"> </span><span class="n">溢出检查</span>
+<span class="w">  </span><span class="o">%</span><span class="n">op4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">add</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="o">%</span><span class="n">op2</span><span class="p">,</span><span class="w"> </span><span class="o">%</span><span class="n">op3</span>
+<span class="w">  </span><span class="n">ret</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="o">%</span><span class="n">op4</span>
+<span class="p">}</span>
+<span class="p">;</span><span class="w"> </span><span class="p">...</span>
+</code></pre></div>
 <h2 id="light-ir-指令">Light IR 指令<a class="headerlink" href="#light-ir-指令" title="Permanent link">¶</a></h2>
 <h3 id="light-ir-指令假设">Light IR 指令假设<a class="headerlink" href="#light-ir-指令假设" title="Permanent link">¶</a></h3>
 <p>Light IR 指令从 LLVM IR 中裁剪得到，因此保留了 LLVM IR 如下的指令规范</p>
@@ -1131,12 +1832,12 @@
 <li>数组类型：<code>[n x &lt;type&gt;]</code>，例如 <code>[10 x i32], [10 x [10 x i32]]</code></li>
 <li>函数类型：<code>&lt;ret-type&gt;@(&lt;arg-type&gt;)</code>，由函数返回值类型与参数类型列表组合成的类型</li>
 </ul>
-<p>组合类型可以嵌套，例如前面的 <code>[10 x [10 x i32]]</code> 就是嵌套后的类型。</p>
+<p>数组和指针类型可以嵌套，例如前面的 <code>[10 x [10 x i32]]</code> 就是嵌套后的类型。</p>
 </li>
 </ul>
 <h3 id="light-ir-指令详解">Light IR 指令详解<a class="headerlink" href="#light-ir-指令详解" title="Permanent link">¶</a></h3>
 <h4 id="terminator-instructions">Terminator Instructions<a class="headerlink" href="#terminator-instructions" title="Permanent link">¶</a></h4>
-<p><strong>注</strong>：<code>ret</code> 与 <code>br</code> 都是 Terminator Instructions 也就是终止指令，在 llvm 基本块的定义里，基本块是单进单出的，因此只能有一条终止指令（<code>ret</code> 或 <code>br</code>）。</p>
+<p><strong>注</strong>：<code>ret</code> 与 <code>br</code> 都是 Terminator Instructions 也就是终止指令，在 llvm 基本块的定义里，基本块只能有一条终止指令，并且一定是基本块的最后一条指令（<code>ret</code> 或 <code>br</code>）。</p>
 <h5 id="ret">Ret<a class="headerlink" href="#ret" title="Permanent link">¶</a></h5>
 <ul>
 <li>概念：返回指令。用于将控制流（以及可选的值）从函数返回给调用者。<code>ret</code>指令有两种形式：一种返回值，然后终结函数，另一种仅终结函数。</li>
@@ -1149,7 +1850,7 @@
 </ul>
 <h5 id="br">Br<a class="headerlink" href="#br" title="Permanent link">¶</a></h5>
 <ul>
-<li>概念：跳转指令。用于使控制流转移到当前功能中的另一个基本块。该指令有两种形式，分别对应于条件分支和无条件分支。</li>
+<li>概念：跳转指令。用于使控制流转移到当前函数中的另一个基本块。该指令有两种形式，分别对应于条件分支和无条件分支。</li>
 <li>格式：</li>
 <li><code>br i1 &lt;cond&gt;, label &lt;iftrue&gt;, label &lt;iffalse&gt;</code></li>
 <li><code>br label &lt;dest&gt;</code></li>
@@ -1186,12 +1887,16 @@
 <h4 id="memory-instructions">Memory Instructions<a class="headerlink" href="#memory-instructions" title="Permanent link">¶</a></h4>
 <h5 id="alloca">Alloca<a class="headerlink" href="#alloca" title="Permanent link">¶</a></h5>
 <ul>
-<li>概念： <code>alloca</code>指令在当前执行函数的栈帧（Stack Frame）上分配内存。</li>
+<li>概念： <code>alloca</code>指令在当前执行函数的栈帧（Stack Frame）上分配内存，并且得到指向该内存的指针。</li>
 <li>格式：<code>&lt;result&gt; = alloca &lt;type&gt;</code></li>
 <li>例子：</li>
 <li><code>%ptr = alloca i32</code></li>
 <li><code>%ptr = alloca [10 x i32]</code></li>
 </ul>
+<details class="alloca 返回指针" open="open">
+<summary>Alloca</summary>
+<p>使用 <code>%1 = alloca i32</code> 在内存分配一个整数，得到的 <code>%1</code> 是 <code>i32*</code> 类型，而使用 <code>%2 = alloca [10 x i32]</code> 在内存分配一个数组，得到的 <code>%2</code> 是 <code>[10 x i32]*</code> 数组指针类型。要想获得数组的元素，需要对 <code>%2</code> 添加两个数组索引，类似于 <code>a[0][2]</code>，第一维对指针进行索引，第二维对数组进行索引。</p>
+</details>
 <h5 id="load">Load<a class="headerlink" href="#load" title="Permanent link">¶</a></h5>
 <ul>
 <li>概念：<code>load</code>指令用于从内存中读取。</li>
@@ -1207,7 +1912,7 @@
 <h4 id="castinst">CastInst<a class="headerlink" href="#castinst" title="Permanent link">¶</a></h4>
 <h5 id="zext">ZExt<a class="headerlink" href="#zext" title="Permanent link">¶</a></h5>
 <ul>
-<li>概念：<code>zext</code>指令将其操作数 <strong>零</strong> 扩展为<code>type2</code>类型。</li>
+<li>概念：<code>zext</code>指令将其操作数<strong>零</strong>扩展为<code>type2</code>类型。</li>
 <li>格式：<code>&lt;result&gt; = zext &lt;type&gt; &lt;value&gt; to &lt;type2&gt;</code></li>
 <li>例子：<code>%1 = zext i1 %0 to i32</code></li>
 </ul>
@@ -1250,16 +1955,189 @@
 </ul>
 <h5 id="getelementptr">GetElementPtr<a class="headerlink" href="#getelementptr" title="Permanent link">¶</a></h5>
 <ul>
-<li>概念：<code>getelementptr</code>指令用于获取数组结构的元素的地址。它 <strong>仅执行地址计算</strong> ，并且不访问内存。</li>
+<li>概念：<code>getelementptr</code>指令用于根据数组或指针的索引计算偏移后的地址。它 <strong>仅执行地址计算</strong> ，不访问内存。</li>
 <li>格式</li>
-<li>数组：<code>&lt;result&gt; = getelementptr &lt;type&gt;, &lt;type&gt;* &lt;ptrval&gt;, i32 0, i32 &lt;idx&gt;</code></li>
-<li>指针（仅在数组作为函数参数时存在）：<code>&lt;result&gt; = getelementptr &lt;type&gt;, &lt;type&gt;* &lt;ptrval&gt;, i32 &lt;idx&gt;</code></li>
-<li>参数解释：<code>getelementptr</code> 后面的两个 <code>&lt;type&gt;</code> 一定是相同的。<code>&lt;ptrval&gt;</code> 表示指针，<code>&lt;idx&gt;</code> 表示索引（也即数组下标）</li>
+<li>根据数组索引计算数组元素的地址 <code>&lt;result&gt; = getelementptr &lt;type&gt;, &lt;type&gt;* &lt;ptrval&gt;, i32 0, i32 &lt;idx2&gt;</code></li>
+<li>根据函数参数中指针索引计算偏移后的地址 <code>&lt;result&gt; = getelementptr &lt;type&gt;, &lt;type&gt;* &lt;ptrval&gt;, i32 &lt;idx&gt;</code></li>
+<li><code>getelementptr</code> 格式中的 <code>&lt;type&gt;, &lt;type&gt;* &lt;ptrval&gt;</code>， <code>&lt;ptrval&gt;</code> 类型为 <code>&lt;type&gt;*</code></li>
 <li>例子：</li>
 <li><code>%2 = getelementptr [10 x i32], [10 x i32]* %1, i32 0, i32 %0</code></li>
 <li><code>%2 = getelementptr i32, i32* %1 i32 %0</code></li>
+</ul>
+<details class="理解getelementptr格式与作用" open="open">
+<summary>理解getelementptr格式与作用</summary>
+<p>假设需要对 ir 中 <code>i32*</code> 类型操作数 <code>%p</code> 指向的内存空间进行存取操作，可以写成</p>
+<div class="highlight"><pre><span></span><code><span class="n">store</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">p</span>
+<span class="o">%</span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">load</span><span class="w"> </span><span class="n">i32</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">p</span>
+</code></pre></div>
+<p>这个过程可以用 C 语言描述。用 <code>int* p</code> 来表示 <code>i32* %p</code>，C 语言描述为</p>
+<div class="highlight"><pre><span></span><code><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="p">;</span>
+</code></pre></div>
+<p>而对于如下 C 代码描述，却好像无法找到对应的 Light IR 代码</p>
+<div class="highlight"><pre><span></span><code><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+</code></pre></div>
+<p>这时可以使用 <code>getelementptr</code> 指令达到类似效果</p>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getelementptr</span><span class="w"> </span><span class="n">i32</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="mi">1</span>
+<span class="c1">// int* p1 = p + 1</span>
+<span class="n">store</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">p1</span>
+<span class="c1">// *p1 = 2;</span>
+<span class="o">%</span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">load</span><span class="w"> </span><span class="n">i32</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">p1</span>
+<span class="c1">// int result = *p1;</span>
+</code></pre></div>
+<p>getelementptr 同时也可以用于数组元素的地址计算，例如</p>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">ar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">alloca</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">i32</span><span class="p">]</span>
+<span class="c1">// int ar[][2];</span>
+<span class="o">%</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getelementptr</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">i32</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">i32</span><span class="p">]</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">ar</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="mi">1</span>
+<span class="c1">// int* p = ar + ((0 * 2) + 1); (其实就是计算的 &amp;ar[0][1])</span>
+<span class="o">%</span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">load</span><span class="w"> </span><span class="n">i32</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">p</span>
+<span class="c1">// int result = *p;</span>
+</code></pre></div>
+<p>此处 <code>getelementptr</code> 拥有两维索引，因为 <code>%ar</code> 是 <code>[2 x i32]*</code> 类型。类似于 C 中的 <code>int ar[][2]</code>，第一维索引用于指定是哪个数组，第二维索引指定是哪个元素。由于 <code>alloca</code> 仅仅分配了 1 个 2 元素数组大小的空间，第一维索引只能是 0，但是当 <code>%ar</code> 并非来自于 <code>alloca</code> 时，非 0 的第一维索引确实可能存在</p>
+<div class="highlight"><pre><span></span><code><span class="n">define</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="err">@</span><span class="n">func</span><span class="p">([</span><span class="mi">2</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">i32</span><span class="p">]</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">ar</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// int ar[][2];</span>
+<span class="w">    </span><span class="o">%</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getelementptr</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">i32</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">i32</span><span class="p">]</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">ar</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="c1">// int* p = ar + ((3 * 2) + 1); (其实就是计算的 &amp;ar[3][1])</span>
+<span class="w">    </span><span class="o">%</span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">load</span><span class="w"> </span><span class="n">i32</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">p</span>
+<span class="w">    </span><span class="c1">// int result = *p;</span>
+<span class="w">    </span><span class="p">...</span>
+</code></pre></div>
+<p><code>getelementptr</code> 的返回值类型并非一定是其右边紧跟的类型，例如 <code>getelementptr [2 x i32], [2 x i32]* %ar, i32 3, i32 1</code> 返回的类型不是 <code>[2 x i32]</code> 而是 <code>i32*</code>。</p>
+<p>从 <code>getelementptr</code> 的对象类型和索引维度数可以确定返回值类型，例如 <code>%p = getelementptr [2 x i32], [2 x i32]* %ar, i32 3, i32 1</code> 进行二维地址计算，最细粒度地址计算是元素的地址，所以返回类型为元素指针，即 <code>i32*</code>。而 <code>%p = getelementptr [2 x i32], [2 x i32]* %ar, i32 3</code> 进行一维地址计算，最细粒度地址计算是数组的地址，所以返回类型为数组指针，即 <code>[2 x i32]*</code>。</p>
+<p>以下是一些 <code>getelementptr</code> 的例子</p>
+<div class="highlight"><pre><span></span><code>%op1 = getelementptr i32, i32* %op0, i32 1 ; %op1 为 i32*
+%op1 = getelementptr i32, [3 x i32]* %op0, i32 1 ; %op1 为 [2 x i32]*
+%op1 = getelementptr i32, [3 x i32]* %op0, i32 1, i32 2 ; %op1 为 i32*
+%op1 = getelementptr i32, [3 x [4 x i32]]* %op0, i32 1 ; %op1 为 [3 x [4 x i32]]*
+%op1 = getelementptr i32, [3 x [4 x i32]]* %op0, i32 1, i32 2 ; %op1 为 [4 x i32]*
+%op1 = getelementptr i32, [3 x [4 x i32]]* %op0, i32 1, i32 2, i32 3 ; %op1 为 i32*
+</code></pre></div>
+</details>
+<ul>
 <li>额外阅读：<a href="https://llvm.org/docs/GetElementPtr.html">The Often Misunderstood GEP Instruction</a></li>
 </ul>
+<h3 id="从-cminusf-生成-light-ir">从 Cminusf 生成 Light IR<a class="headerlink" href="#从-cminusf-生成-light-ir" title="Permanent link">¶</a></h3>
+<h5 id="变量">变量<a class="headerlink" href="#变量" title="Permanent link">¶</a></h5>
+<p>Cminusf 中每个变量都可能会被修改多次，故它们不适合翻译为 Light IR 中的虚拟寄存器（虚拟寄存器只能被赋值一次）。</p>
+<p>在 C 语言中，局部变量最终会存储到函数栈帧上，而 <code>alloca</code> 正是在函数栈帧分配内存的指令，每个 Cminusf 变量刚好可以转化为一个 <code>alloca</code> 分配变量。</p>
+<p><code>alloca</code> 得到指向变量的指针，对变量的读取和赋值需要转换为对应的 <code>load</code> 和 <code>store</code>。</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="c1">// %a = alloca i32</span>
+<span class="c1">// %a 类型为 i32*</span>
+<span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="c1">// store i32 1, i32* %a</span>
+</code></pre></div>
+<p>我们不要求翻译后的 Light IR 中虚拟寄存器名字与 Cminusf 变量名相同，但是保持相同变量名确实可以带来更好的程序可读性。在编写翻译程序时，你可以通过 <code>Value</code> 类的 <code>set_name</code> 方法来设置 Light IR 的虚拟寄存器名字，如果未设置，程序也会自动分配一个 <code>op1</code> 类似格式的名字。注意 Cminusf 允许同一函数中存在多个同名变量，但是 Light IR 不允许同一函数中具有同名虚拟寄存器，若你要自己设置名字，需要保证每个名字不同。</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"> </span><span class="c1">// ok</span>
+<span class="p">}</span><span class="w"> </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">alloca</span><span class="w"> </span><span class="n">i32</span>
+<span class="o">%</span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">alloca</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="c1">// error</span>
+</code></pre></div>
+<p>我们建议将所有 <code>alloca</code> 语句放在 Light IR 函数的入口块的开头处，即使变量声明可能位于 Cminusf 函数的各个位置。考虑如下函数</p>
+<div class="highlight"><pre><span></span><code><span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>当将 <code>%b = alloca i32</code> 放置到循环内而非函数开头时，<code>alloca</code> 会在每次循环时都在函数栈帧上分配内存，由于函数栈帧上的内存只会在函数运行结束后释放，这将导致内存泄漏。</p>
+<p>为了将 <code>alloca</code> 语句创建在基本块开头，你可以使用 <code>create_alloca_begin</code> 函数，它创建 <code>alloca</code> 并置于基本块开头处。多个 <code>alloca</code> 之间的顺序无关紧要，它们不会影响程序的正确性和性能。</p>
+<h5 id="全局变量">全局变量<a class="headerlink" href="#全局变量" title="Permanent link">¶</a></h5>
+<p>Cminusf 的全局变量同样可能被修改多次。在 C 语言中，全局变量被分配到程序的数据段，Light IR 同样有在程序数据段创建变量的方法。</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="c1">// @a = global i32 0</span>
+<span class="c1">// @a 类型为 i32*</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<span class="c1">// @b = global [2 x i32] zeroinitializer</span>
+<span class="c1">// @b 类型为 [2 x i32]*</span>
+</code></pre></div>
+<p><code>global</code> 同样得到指针，你可以对其进行 <code>load</code> 和 <code>store</code></p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="c1">// store i32 1, i32* @a</span>
+</code></pre></div>
+<h5 id="表达式中间结果">表达式中间结果<a class="headerlink" href="#表达式中间结果" title="Permanent link">¶</a></h5>
+<p>Cminusf 中的表达式需要使用 Light IR 的多个表达式来表达，由于其中的临时变量只会被赋值一次，可以使用虚拟寄存器来表示临时变量，而不必使用 <code>alloca</code>。</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="c1">// %a = alloca i32</span>
+<span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="c1">// %op0 = add i32 1 2</span>
+<span class="c1">// %op1 = add i32 %op0 3</span>
+<span class="c1">// store i32 %op1, i32* %a</span>
+</code></pre></div>
+<h5 id="函数参数类型">函数参数类型<a class="headerlink" href="#函数参数类型" title="Permanent link">¶</a></h5>
+<p>Cminusf 中的简单类型都拥有对应的 Light IR 类型</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">b</span><span class="p">)</span>
+<span class="c1">// define void @f(i32 a, float b)</span>
+</code></pre></div>
+<p>而对于数组函数参数，其没有具体大小的 <code>[]</code> 实际上代表了指针</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[],</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">[][</span><span class="mi">2</span><span class="p">])</span>
+<span class="c1">// define void @f(i32* a, [2 x i32]* b)</span>
+</code></pre></div>
+<h5 id="函数参数传递">函数参数传递<a class="headerlink" href="#函数参数传递" title="Permanent link">¶</a></h5>
+<p>Cminusf 使用值传递参数，你需要传递值而非地址。这意味着你需要在传递时进行 <code>load</code> 操作</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+<span class="c1">// %a = alloca i32</span>
+<span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+<span class="c1">// %op0 = load i32, i32* %a</span>
+<span class="c1">// call void @f(i32 %op0)</span>
+</code></pre></div>
+<p>另一个需要关注的点是传递数组参数，由于函数参数和数组类型不同，你可能需要使用 <code>getelementptr</code></p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[]);</span>
+<span class="c1">// define void @f(i32* %a)</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+<span class="w">    </span><span class="c1">// %a = alloca [2 x i32]</span>
+<span class="w">    </span><span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// %op0 = getelementptr [2 x i32], [2 x i32]* %a, i32 0, i32 0</span>
+<span class="w">    </span><span class="c1">// call void @f(i32* %op0)</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>当然在参数类型相同时就不用</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[]);</span>
+<span class="c1">// define void @f(i32* %a)</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">g</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[])</span>
+<span class="c1">// define void @g(i32* %a)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// call void @f(i32* %a)</span>
+<span class="w">    </span><span class="c1">// 这不是翻译时的标准做法，它经过了 mem2reg 优化</span>
+<span class="p">}</span>
+</code></pre></div>
+<h5 id="函数参数存储">函数参数存储<a class="headerlink" href="#函数参数存储" title="Permanent link">¶</a></h5>
+<p>Cminusf 的函数形参是一个变量，例如 <code>void f(int a)</code>，它可以在函数内被赋值。
+然而，Light IR 位于函数参数位置的标识符是虚拟寄存器，例如 <code>define void f(i32 %a)</code>，<code>%a</code> 是虚拟寄存器，值无法改变。</p>
+<p>解决这个问题的做法是在函数开始执行时将函数参数传入的值存进函数栈帧</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">g</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">[])</span>
+<span class="c1">// define void @g(i32 %a, i32* %b)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// %ap = alloca i32</span>
+<span class="w">    </span><span class="c1">// %bp = alloca i32*</span>
+<span class="w">    </span><span class="c1">// store i32 %a, i32* %ap</span>
+<span class="w">    </span><span class="c1">// store i32* %b, i32* %bp</span>
+<span class="w">    </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// store i32 1, i32* %ap</span>
+<span class="w">    </span><span class="o">*</span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// %op0 = load i32*, i32** %bp</span>
+<span class="w">    </span><span class="c1">// store i32 2, i32* %op0</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>Cminusf 没有指针赋值操作，函数参数中的指针永远不会改变。上述例子的 <code>%bp = alloca i32*</code> 是多余的，<code>%bp</code> 的 <code>load</code> 操作可以用 <code>%b</code> 替代，转化为</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">g</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">[])</span>
+<span class="c1">// define void @g(i32 %a, i32* %b)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// %ap = alloca i32</span>
+<span class="w">    </span><span class="c1">// store i32 %a, i32* %ap</span>
+<span class="w">    </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// store i32 1, i32* %ap</span>
+<span class="w">    </span><span class="o">*</span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// store i32 2, i32* %b</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>这样做会使 IR 生成变得困难，所以这步操作通常在 IR 优化而非在从 Cminusf 生成 Light IR 阶段进行。</p>
 
 
 
@@ -1280,7 +2158,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年9月8日 04:04:26 UTC">2025年9月8日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年10月10日 09:33:50 UTC">2025年10月10日</span>
   </span>
 
     
@@ -1291,12 +2169,13 @@
   <span class="md-source-file__fact">
     <span class="md-icon" title="贡献者">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"></path></svg>
       
     </span>
     <nav>
       
-        <a href="mailto:153092435+terialion@users.noreply.github.com">WangYuhang</a>
+        <a href="mailto:153092435+terialion@users.noreply.github.com">WangYuhang</a>, 
+        <a href="mailto:ylc221606@mail.ustc.edu.cn">Yang</a>
     </nav>
   </span>
 
@@ -1320,6 +2199,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚">
+        
+          
+          <a href="../cminusf%E8%AF%AD%E4%B9%89/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Cminusf 语义介绍">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                Cminusf 语义介绍
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../LightIR%20C%2B%2B/" class="md-footer__link md-footer__link--next" aria-label="下一页: Light IR C++ 库">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                Light IR C++ 库
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
