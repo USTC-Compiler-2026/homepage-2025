@@ -1273,9 +1273,9 @@
 <li>upstream：课程发布实验代码的公开仓库</li>
 <li>origin：学生 fork 得到的私有仓库</li>
 </ul>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="figs/remote-info.png" data-desc-position="bottom"><img alt="" src="figs/remote-info.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="figs/index2.png" data-desc-position="bottom"><img alt="" src="figs/index2.png"></a></p>
 <p>两个仓库各有 3 条分支（红色字体）：main、lab0 和 lab1，如下图。最上边的 lab1 和 main 代表本地的分支，分别追踪远程的 <code>origin/lab1</code> 和 <code>origin/main</code>，main 前边的星号 <code>*</code> 和绿色字体代表当前处于 main 分支下：</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="figs/branches.png" data-desc-position="bottom"><img alt="" src="figs/branches.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="figs/index3.png" data-desc-position="bottom"><img alt="" src="figs/index3.png"></a></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>以上两条命令分别是：<code>git remote -v</code> 和 <code>git branch --all -vv</code>，如果第二条命令的输出中缺少 upstream 的分支，你可以通过 <code>git fetch --all</code> 来获取。</p>
@@ -1301,7 +1301,11 @@
 <p>在这里，我们（上游仓库）最新的代码将 <code>ASTVisitor::visit</code> 接口的返回值更新成了 <code>Value *</code>，这种接口变动要以上游为准。现在是将 lab1 合并进 main 分支，所以进行 merge 的双方，current 是上游内容，incoming 是 lab1 的内容，在这里保留 current 内容。</p>
 <p>在完成文件的更改后，保存文件，你仍然在 merge 的阶段，你可以使用 <code>git status</code> 查看，并使用 <code>git merge --continue</code> 完成你的合并操作，如下图所示。</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="figs/conflict-solve-2.png" data-desc-position="bottom"><img alt="" src="figs/conflict-solve-2.png"></a></p>
+<p>如果执行 <code>git merge --continue</code> 后有下图所示的 hint，按照提示先 <code>git add &lt;your_directory_or_merged_files&gt;</code> 再 merge 即可。
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="figs/merge-extra2.png" data-desc-position="bottom"><img alt="" src="figs/merge-extra2.png"></a></p>
 <p>事实上，在处理本次合并可能的冲突时，只需要保留你在 lab1 编写的代码即可，其余基本上都保留上游仓库的最新内容。</p>
+<p>VS code 还提供了高亮合并选项，例如下图是助教保留 lab1 parser 相关代码时的高亮选项 <code>Accept Incoming Change</code>：
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="figs/merge-extra1.png" data-desc-position="bottom"><img alt="" src="figs/merge-extra1.png"></a></p>
 </details>
 <p>此时进入 build 文件夹，执行 <code>cmake ..</code> 和 <code>make -j</code> 编译最新的程序，然后进入 lab1 的测试目录 <code>tests/1-parser</code>，执行 lab1 的两个脚本。在正确合并分支的情况下，你应该能够正常编译项目并通过 lab1 的两个脚本，这时你可以开始本次实验的撰写了。</p>
 <details class="note">
@@ -1346,6 +1350,7 @@
 <ul>
 <li>阶段一：在希冀平台提交你的 <code>answer.pdf</code> 文件，在希冀平台提交你实验仓库的 url（如 <code>https://cscourse.ustc.edu.cn/vdir/Gitlab/xxx/2025ustc-jianmu-compiler.git main</code>）。</li>
 <li>阶段二、三：在希冀平台提交你实验仓库的 url（如 <code>https://cscourse.ustc.edu.cn/vdir/Gitlab/xxx/2025ustc-jianmu-compiler.git main</code>）。</li>
+<li>注意是 url 后空格加上分支名</li>
 </ul>
 
 
@@ -1367,7 +1372,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年10月12日 02:29:34 UTC">2025年10月12日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年10月12日 01:53:21 UTC">2025年10月12日</span>
   </span>
 
     
@@ -1383,7 +1388,8 @@
     </span>
     <nav>
       
-        <a href="mailto:1002682355@qq.com">Terialion</a>, 
+        <a href="mailto:119509559+shirakawasanae@users.noreply.github.com">Jingwen Sun</a>, 
+        <a href="mailto:not.committed.yet">Not Committed Yet</a>, 
         <a href="mailto:153092435+terialion@users.noreply.github.com">WangYuhang</a>
     </nav>
   </span>
