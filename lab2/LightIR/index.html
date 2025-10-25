@@ -2045,7 +2045,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <p>当将 <code>%b = alloca i32</code> 放置到循环内而非函数开头时，<code>alloca</code> 会在每次循环时都在函数栈帧上分配内存，由于函数栈帧上的内存只会在函数运行结束后释放，这将导致内存泄漏。</p>
-<p>为了将 <code>alloca</code> 语句创建在基本块开头，<strong>你可以使用 <code>create_alloca_begin</code> 函数，它创建 <code>alloca</code> 并置于基本块开头处</strong>。多个 <code>alloca</code> 之间的顺序无关紧要，它们不会影响程序的正确性和性能。</p>
+<p>为了将 <code>alloca</code> 语句创建在入口块开头，<strong>你可以使用 <code>create_alloca_begin</code> 函数，它创建 <code>alloca</code> 并置于基本块开头处（即使该基本块已经被 <code>br</code> 等指令终止），而 <code>BasicBlock::get_entry_block_of_same_function</code> 函数则用于获取函数的入口块</strong>。多个 <code>alloca</code> 之间的顺序无关紧要，它们不会影响程序的正确性和性能。</p>
 <h5 id="全局变量">全局变量<a class="headerlink" href="#全局变量" title="Permanent link">¶</a></h5>
 <p>Cminusf 的全局变量同样可能被修改多次。在 C 语言中，全局变量被分配到程序的数据段，Light IR 同样有在程序数据段创建变量的方法。</p>
 <div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
@@ -2159,7 +2159,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年10月25日 06:07:11 UTC">2025年10月25日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年10月25日 06:21:08 UTC">2025年10月25日</span>
   </span>
 
     
